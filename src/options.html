@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lexio Rent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="options">
+  <main>
+    <h1><img src="../icons/icon-48.png" alt="" width="32" height="32"> <span data-t="optTitle"></span></h1>
+    <form id="keyform">
+      <label for="apiKey" data-t="optKey"></label>
+      <input id="apiKey" type="password" autocomplete="off" spellcheck="false" placeholder="lck_..." required>
+      <p class="muted" data-t="optKeyHelp"></p>
+      <div class="row">
+        <button type="submit" data-t="optSave"></button>
+        <button type="button" id="remove" class="secondary" data-t="optRemove"></button>
+      </div>
+    </form>
+    <p id="status" role="status"></p>
+    <p class="muted" data-t="optPrivacy"></p>
+    <p class="muted"><a href="https://lexio.rent/en/car-rental-software" target="_blank" rel="noopener">Lexio Rent</a> · <a href="https://docs.lexio.rent/authentification" target="_blank" rel="noopener">API keys</a> · <a href="https://github.com/lexio-rent-git/lexio-browser-extension" target="_blank" rel="noopener">Source</a></p>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+:root { --green: #17c19e; --ink: #14213d; --muted: #6b7280; --line: #e5e7eb; --bg: #ffffff; --soft: #f5f7fa; }
+@media (prefers-color-scheme: dark) { :root { --ink: #e5e7eb; --muted: #9ca3af; --line: #374151; --bg: #111827; --soft: #1f2937; } }
+* { box-sizing: border-box; }
+body { margin: 0; font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }
+body.popup { width: 380px; min-height: 300px; overflow-x: hidden; }
+header { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+header strong { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+nav { display: flex; border-bottom: 1px solid var(--line); }
+nav button { flex: 1; padding: 8px; background: none; border: 0; border-bottom: 2px solid transparent; color: var(--muted); cursor: pointer; font: inherit; }
+nav button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--green); font-weight: 600; }
+main { padding: 10px 12px; }
+h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 12px 0 6px; }
+.list { list-style: none; margin: 0; padding: 0; }
+.list li { padding: 8px; border: 1px solid var(--line); border-radius: 6px; margin-bottom: 6px; background: var(--soft); }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.muted { color: var(--muted); }
+.badge { font-size: 11px; padding: 1px 6px; border-radius: 10px; background: var(--line); }
+.badge.IN_PROGRESS { background: #dbeafe; color: #1e3a8a; }
+.badge.RESERVED { background: #d1fae5; color: #065f46; }
+.badge.CANCELLED { background: #fee2e2; color: #991b1b; }
+form { display: grid; gap: 8px; margin-bottom: 10px; }
+label { display: grid; gap: 3px; color: var(--muted); }
+input, select { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+button { font: inherit; padding: 7px 12px; border-radius: 6px; border: 0; background: var(--green); color: #fff; cursor: pointer; }
+button.secondary { background: var(--soft); color: var(--ink); border: 1px solid var(--line); }
+button.link { background: none; color: var(--muted); padding: 0; text-decoration: underline; }
+#status { min-height: 1em; margin: 6px 0 0; }
+#status.error { color: #b91c1c; }
+footer { padding: 8px 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+a { color: var(--green); }
+body.options main { max-width: 560px; margin: 32px auto; }
+body.options h1 { display: flex; align-items: center; gap: 10px; font-size: 20px; }

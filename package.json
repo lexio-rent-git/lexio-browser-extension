@@ -1,0 +1,12 @@
+{
+  "name": "lexio-browser-extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser extension for Lexio Rent: fleet availability, today's pick-ups and returns, rentals and customers.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "package": "bash scripts/package.sh"
+  }
+}

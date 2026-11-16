@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lexio Rent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="popup">
+  <header>
+    <img src="../icons/icon-32.png" alt="" width="20" height="20">
+    <strong id="org">Lexio Rent</strong>
+    <button id="settings" class="link" type="button"></button>
+  </header>
+
+  <nav role="tablist">
+    <button role="tab" data-tab="today" aria-selected="true"></button>
+    <button role="tab" data-tab="availability" aria-selected="false"></button>
+    <button role="tab" data-tab="search" aria-selected="false"></button>
+  </nav>
+
+  <main>
+    <section id="needkey" hidden>
+      <p data-t="needKey"></p>
+      <button id="opensettings" type="button" data-t="openSettings"></button>
+    </section>
+
+    <section id="tab-today" data-panel="today">
+      <h2 data-t="pickups"></h2>
+      <ul id="pickups" class="list"></ul>
+      <h2 data-t="returns"></h2>
+      <ul id="returns" class="list"></ul>
+    </section>
+
+    <section id="tab-availability" data-panel="availability" hidden>
+      <form id="availform">
+        <label><span data-t="from"></span> <input type="datetime-local" id="startAt" required></label>
+        <label><span data-t="to"></span> <input type="datetime-local" id="endAt" required></label>
+        <label><span data-t="type"></span> <select id="vehicleType"></select></label>
+        <button type="submit" data-t="check"></button>
+      </form>
+      <ul id="offers" class="list"></ul>
+    </section>
+
+    <section id="tab-search" data-panel="search" hidden>
+      <form id="searchform">
+        <label><span data-t="searchLabel"></span> <input type="search" id="query" required></label>
+        <button type="submit" data-t="find"></button>
+      </form>
+      <div id="results"></div>
+    </section>
+
+    <p id="status" role="status"></p>
+  </main>
+
+  <footer><a href="https://lexio.rent/en/car-rental-software" target="_blank" rel="noopener">lexio.rent</a> · <a href="https://docs.lexio.rent" target="_blank" rel="noopener">API docs</a></footer>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
