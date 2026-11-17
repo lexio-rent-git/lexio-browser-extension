@@ -1,6 +1,6 @@
 # Lexio Rent – Fleet & Bookings (browser extension)
 
-A small Chrome / Edge / Opera / Brave extension for rental agencies that run on Lexio Rent. From the toolbar, without opening the back office:
+A small Chrome / Edge / Opera / Brave (and Thunderbird) extension for rental agencies that run on Lexio Rent. From the toolbar, without opening the back office:
 
 - **Today**: the pick-ups and returns planned today, with vehicle, customer and times.
 - **Availability**: which vehicles are free for any dates, sorted by price (tax included, with the default mileage package), filterable by vehicle type.
@@ -9,6 +9,10 @@ A small Chrome / Edge / Opera / Brave extension for rental agencies that run on 
 <a href="https://lexio.rent/en/car-rental-software">Lexio Rent</a> is rental management software for professional car, van and two-wheeler rental companies: bookings, digital rental agreements, condition reports, deposits, maintenance and invoicing. The extension reads your own Lexio data through the public <a href="https://docs.lexio.rent">Lexio Rent API</a>.
 
 ![Availability](docs/availability.png)
+
+## Thunderbird
+
+`lexio-thunderbird-*.xpi` is the same extension for Thunderbird 128+, with one more button in every displayed email: **Lexio Rent: this customer** shows the Lexio customer behind the sender (or behind the recipient, for an email your agency sent), with their rentals, status, vehicle and dates. Install it from Thunderbird Add-ons, or with **Add-ons and Themes › ⚙ › Install Add-on From File**. It needs `messagesRead` (to read the sender of the displayed email) and `accountsRead` (to recognise your own addresses).
 
 ## Install
 

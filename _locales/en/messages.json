@@ -1,5 +1,20 @@
 {
-  "extName": { "message": "Lexio Rent – Fleet & Bookings" },
-  "extDescription": { "message": "Check your Lexio Rent fleet from the toolbar: free vehicles and prices for any dates, today's pick-ups and returns, rentals and customers." },
-  "actionTitle": { "message": "Lexio Rent: availability and bookings" }
+  "extName": {
+    "message": "Lexio Rent – Fleet & Bookings"
+  },
+  "extDescription": {
+    "message": "Check your Lexio Rent fleet from the toolbar: free vehicles and prices for any dates, today's pick-ups and returns, rentals and customers."
+  },
+  "actionTitle": {
+    "message": "Lexio Rent: availability and bookings"
+  },
+  "tbName": {
+    "message": "Lexio Rent for Thunderbird"
+  },
+  "tbDescription": {
+    "message": "See the Lexio Rent customer behind an email: their rentals, with status, vehicle and dates. Plus free vehicles and prices, and today's pick-ups and returns."
+  },
+  "senderTitle": {
+    "message": "Lexio Rent: this customer"
+  }
 }

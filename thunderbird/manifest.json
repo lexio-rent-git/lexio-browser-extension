@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_tbName__",
+  "short_name": "Lexio Rent",
+  "description": "__MSG_tbDescription__",
+  "version": "0.1.0",
+  "default_locale": "en",
+  "author": "Lexio Rent",
+  "homepage_url": "https://lexio.rent/en/car-rental-software",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "thunderbird@lexio.rent",
+      "strict_min_version": "128.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "message_display_action": {
+    "default_title": "__MSG_senderTitle__",
+    "default_popup": "src/sender.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "action": {
+    "default_title": "__MSG_actionTitle__",
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "options_ui": {
+    "page": "src/options.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "storage",
+    "messagesRead",
+    "accountsRead"
+  ],
+  "host_permissions": [
+    "https://api.lexio.rent/*"
+  ]
+}

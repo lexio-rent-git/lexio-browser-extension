@@ -110,3 +110,10 @@ export function splitToday(rentals, today) {
   const byTime = (field) => (a, b) => (a.period?.[field] || "").localeCompare(b.period?.[field] || "");
   return { pickups: pickups.sort(byTime("startAt")), returns: returns.sort(byTime("endAt")) };
 }
+
+// "Hugo Robert <hugo.robert@example.com>" -> "hugo.robert@example.com" (lower case); null if none.
+export function parseAddress(value) {
+  if (!value) return null;
+  const m = /<([^<>\s]+@[^<>\s]+)>/.exec(value) || /([^\s<>,;"]+@[^\s<>,;"]+)/.exec(value);
+  return m ? m[1].toLowerCase() : null;
+}

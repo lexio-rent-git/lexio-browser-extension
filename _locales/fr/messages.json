@@ -1,5 +1,20 @@
 {
-  "extName": { "message": "Lexio Rent – Flotte et réservations" },
-  "extDescription": { "message": "Consultez votre flotte Lexio Rent depuis la barre d'outils : véhicules libres et prix sur vos dates, départs et retours du jour, locations et clients." },
-  "actionTitle": { "message": "Lexio Rent : disponibilités et réservations" }
+  "extName": {
+    "message": "Lexio Rent – Flotte et réservations"
+  },
+  "extDescription": {
+    "message": "Consultez votre flotte Lexio Rent depuis la barre d'outils : véhicules libres et prix sur vos dates, départs et retours du jour, locations et clients."
+  },
+  "actionTitle": {
+    "message": "Lexio Rent : disponibilités et réservations"
+  },
+  "tbName": {
+    "message": "Lexio Rent pour Thunderbird"
+  },
+  "tbDescription": {
+    "message": "Retrouvez le client Lexio Rent derrière un e-mail : ses locations, avec statut, véhicule et dates. Et aussi les véhicules libres et leurs prix, les départs et retours du jour."
+  },
+  "senderTitle": {
+    "message": "Lexio Rent : ce client"
+  }
 }

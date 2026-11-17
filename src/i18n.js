@@ -40,6 +40,9 @@ const STRINGS = {
     optSaved: "Connected to",
     optRemoved: "Key removed.",
     optPrivacy: "The key is stored only in this browser profile and is sent only to api.lexio.rent.",
+    senderNone: "No Lexio customer with this email address.",
+    senderNoMessage: "Open an email to see its sender in Lexio.",
+    senderLookup: "Looking up",
   },
   fr: {
     tabToday: "Aujourd'hui",
@@ -80,6 +83,9 @@ const STRINGS = {
     optSaved: "Connecté à",
     optRemoved: "Clé supprimée.",
     optPrivacy: "La clé est gardée uniquement dans ce profil de navigateur et n'est envoyée qu'à api.lexio.rent.",
+    senderNone: "Aucun client Lexio avec cette adresse e-mail.",
+    senderNoMessage: "Ouvrez un e-mail pour retrouver son expéditeur dans Lexio.",
+    senderLookup: "Recherche de",
   },
 };
 

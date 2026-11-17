@@ -12,6 +12,7 @@ This extension is published by Lexio Rent (contact@lexio.rent), the company behi
 
 - The extension sends requests only to `https://api.lexio.rent`, the Lexio Rent API, with your key, to read your own data: vehicles and their availability and prices, rentals, and customers looked up by email or rental number.
 - It sends nothing to Lexio Rent or to anyone else: no analytics, no tracking, no advertising, no third-party scripts.
+- In Thunderbird only, it reads the sender and recipients of the email you are displaying, when you click its button, to look that address up in your Lexio organization, and the list of your own email addresses, to tell your messages from your customers'. It does not read message bodies and keeps nothing.
 - It does not read the pages you visit, your browsing history, your tabs or your cookies. Its only browser permission is `storage`, and its only host permission is `https://api.lexio.rent/*`.
 
 ## Data shown

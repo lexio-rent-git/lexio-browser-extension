@@ -65,3 +65,12 @@ test("splitToday keeps reserved starts and in-progress ends of the day, sorted",
   assert.deepEqual(pickups.map((x) => x.number), ["A", "B"]);
   assert.deepEqual(returns.map((x) => x.number), ["C"]);
 });
+
+test("parseAddress extracts the email of a From header", async () => {
+  const { parseAddress } = await import("../src/api.js");
+  assert.equal(parseAddress("Hugo Robert <Hugo.Robert@Example.com>"), "hugo.robert@example.com");
+  assert.equal(parseAddress("hugo.robert@example.com"), "hugo.robert@example.com");
+  assert.equal(parseAddress('"Robert, Hugo" <h@x.fr>'), "h@x.fr");
+  assert.equal(parseAddress("Hugo Robert"), null);
+  assert.equal(parseAddress(undefined), null);
+});
